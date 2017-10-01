@@ -1,2 +1,7 @@
 gunicorn
 Flask
+Flask-Social
+http://github.com/pythonforfacebook/facebook-sdk/tarball/master
+python-twitter
+oauth2client 
+google-api-python-client
