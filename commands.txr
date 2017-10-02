@@ -1,0 +1,10 @@
+cd E:\Study\oc
+e:
+oc project collabwrite
+
+oc port-forward -p collabwrite-4-zvff0 5000:8080
+
+oc port-forward -p mongodb-1-kg030 27017:27017
+
+cd E:\Study\CollabWrite
+e:
