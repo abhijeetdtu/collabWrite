@@ -1,6 +1,6 @@
 import os
 from flask import Flask,render_template
-from urllib import quote_plus
+from urllib.parse import quote_plus
 application = Flask(__name__ , static_folder = "Frontend/Statics" , template_folder="Frontend/Templates")
 
 

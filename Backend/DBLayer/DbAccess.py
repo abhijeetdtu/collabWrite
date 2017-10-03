@@ -5,7 +5,8 @@ class DbAccess:
 
 	if('MONGODB_USER' not in os.environ):
 		from pymongo import MongoClient
-		from urllib import quote_plus
+		from urllib.parse import quote_plus
+		
 		username , password = open("CollabWrite/credLoad.txt").read().split("\n")
 
 		client = MongoClient('mongodb://%s:%s@%s' % ( quote_plus(username) , quote_plus(password) ,'127.0.0.1:27017'))
