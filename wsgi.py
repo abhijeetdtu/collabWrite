@@ -17,10 +17,9 @@ def Landing():
     return render_template("Landing.html")
 
 
-@application.route('/Views/<path:path>', methods=['GET', 'POST'])
-def Views(path):
-    print(path ,"/Views/{}".format(path) ) 
-    return render_template("/Views/{}".format(path))
+@application.route('/Templates/<path:path>', methods=['GET', 'POST'])
+def Templates(path):
+    return render_template("{}".format(path))
 
 
 if __name__ == "__main__":

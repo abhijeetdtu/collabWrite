@@ -5,7 +5,7 @@ var app = angular.module('CollabWrite', ['ui.router']);
         $stateProvider
         .state('home', {
             url : '/',
-            templateUrl: '/Views/Home.html',
+            templateUrl: '/Templates/Views/Home.html',
             controller: 'HomeController'
         })
     });
