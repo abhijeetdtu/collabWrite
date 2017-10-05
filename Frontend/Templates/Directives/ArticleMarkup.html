@@ -1,13 +1,22 @@
-<div class="row" ng-init="showEditor = false">
-	<div class="col-sm-12 col-md-1">
-	<div class="row-fluid">
-		<button class="editor-save btn-lg btn-default" ng-click="showEditor = true"> Edit </button>
-	</div>
-	</div>
-	<div class="col-sm-12 col-md-10">
-		<div class="editor" ng-show="showEditor">
-			<editor  key="summernote" default-text="[[text]]" on-save="saveEditor(data)" enabled="showEditor"></editor>
-		</div>
-	</div>
+<div class="article">
+	<div class="row-fluid" ng-init="showEditor = false">
 
+		<div class="row-fluid">
+			<div class="article-heading-holder">
+				<h1 class="article-heading"> [[heading]] </h1>	
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="article-collaborators-holder">
+				<h4 class="article-collaborators">by [[collabText]] </h4>
+			</div>
+		</div>
+
+		<div class="row-fluid">
+			<div class="editor">
+				<editor  key="[[key]]" default-text="[[text]]" on-save="onSave(data)" enabled="false"></editor>
+			</div>
+		</div>
+
+	</div>
 </div>

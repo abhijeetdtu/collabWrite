@@ -1,0 +1,17 @@
+.panel-body[contenteditable="false"]{
+	background-color : #ffffff !important
+}
+
+
+.note-editor.note-frame{
+	border : 0px white !important;
+}
+
+.editor{
+	max-height: 80%
+}
+
+.button-holder{
+	position:sticky;
+	top:40%;
+}

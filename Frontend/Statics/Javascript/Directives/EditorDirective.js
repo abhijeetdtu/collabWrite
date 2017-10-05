@@ -52,7 +52,10 @@ app.directive("editor" ,["$timeout" ,function($timeout){
 				scope.enabled = scope.enabled === "true";
 				if(scope.enabled === false)
 					scope.disable();
+
+				$('#'+attr.key).summernote({airMode:true ,  maxHeight : 300 });
 				$('#'+attr.key).summernote('code' , attr.defaultText);	
+				
 
 			});
 			
